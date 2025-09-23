@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+    font-family: "Inter", sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*CSS Header*/
+
+.headerCont {
+    /*Estilização da section do header*/
+    background: linear-gradient(180deg, rgba(255, 223, 12, 0.916), rgba(255, 140, 0, 0.674), black);
+    height: 12vh;
+    width: 100%;
+}
+
+.header {
+    /*Menu*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 7%;
+}
+
+.lista {
+    /*Lista do menu*/
+    display: flex;
+    gap: 60px;
+    transition: 0.3s;
+}
+
+.itemLink {
+    /*Itens do menu*/
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    transition: 0.3s;
+}
+
+.itemLink:hover,
+.lista:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+/*CSS sec Distribuições*/
+
+.distri {
+    display: flex;
+    padding: 5% 0%;
+}
+
+.textDistri {
+    /*Caixa geral do texto*/
+    padding: 0% 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.textContDistri {
+    /*Texto distribuições*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.textContDistri h1 {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.textContDistri p {
+    font-size: 12px;
+}
+
+.imgContDistri {
+    width: 100%;
+    height: 200px;
+}
+
+.imgDistri {
+    width: 100%;
+    height: 100%;
+    background-image: url("./img/distribuicoes.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/*Section sobre a definição (cards)*/
+
+.defin {
+    /*section definição*/
+    padding: 5% 0%;
+    display: flex;
+}
+
+.textDefin {
+    padding: 0% 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.textContDefin {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    color: white;
+}
+
+.textContDefin p { /*paragrafos cards*/
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.car {
+    /*cards*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+    background: linear-gradient(135deg, darkorange, yellow);
+    border-radius: 10px;
+    color: black;
+    transition: 0.3s;
+}
+.car:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+span {
+    /*titulo dos cards*/
+    font-size: 13px;
+    font-weight: 800;
+}
+
+@media screen and (min-width: 500px) {
+
+    /*Section Distribuições*/
+
+    .textContDistri h1 {
+        /*Est. do titulo*/
+        font-size: 18px;
+    }
+
+    .textContDistri p {
+        /*Est. do paragrafo*/
+        font-size: 13px;
+    }
+
+    .imgContDistri {
+        padding: 5%;
+        height: 300px;
+    }
+
+}
+
+@media screen and (min-width: 650px) {
+
+    .itemLink {
+        font-size: 20px;
+    }
+
+    /*Section Distribuições*/
+
+    .textContDistri h1 {
+        /*Est. do titulo*/
+        font-size: 20px;
+    }
+
+    .textContDistri p {
+        /*Est. do paragrafo*/
+        font-size: 15px;
+    }
+
+    .imgContDistri {
+        height: 350px;
+    }
+
+    /*section definição (Cards)*/
+
+    .textContDefin {
+        gap: 30px;
+    }
+
+    .textContDefin p {
+        font-size: 12px;
+    }
+
+    span {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 820px) {
+
+    /*Section Distribuições*/
+
+    .imgContDistri {
+        height: 450px;
+    }
+
+    /*section definição (Cards)*/
+
+    .textContDefin p {
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 17px;
+    }
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .headerCont {
+        height: 17vh;
+    }
+
+    .itemLink {
+        font-size: 25px;
+    }
+
+     /*section distribuiuções*/
+
+    .textContDistri {
+        gap: 30px;
+    }
+
+    .textContDistri h1 {
+        /*Est. do titulo*/
+        font-size: 25px;
+    }
+
+    .textContDistri p {
+        /*Est. do paragrafo*/
+        font-size: 18px;
+    }
+
+    .imgContDistri {
+        height: 500px;
+    }
+
+     /*section definição (cards)*/
+
+    .textContDefin {
+        gap: 40px;
+    }
+
+    .textContDefin p {
+        font-size: 15px;
+    }
+
+    span{
+        font-size: 19px;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+
+    .headerCont {
+        height: 20vh;
+    }
+
+    .itemLink {
+        font-size: 35px;
+    }
+
+     /*section distribuições*/
+
+    .textContDistri {
+        gap: 40px;
+    }
+
+    .textContDistri h1 {
+        /*Est. do titulo*/
+        font-size: 35px;
+    }
+
+    .textContDistri p {
+        /*Est. do paragrafo*/
+        font-size: 25px;
+    }
+
+    .imgContDistri {
+        padding: 5%;
+        height: 720px;
+    }
+
+    /*section definição*/
+
+    .textContDefin {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .car{
+        padding: 2%;
+    }
+
+    .textContDefin p {
+        font-size: 20px;
+    }
+
+    span{
+        font-size: 25px;
+    }
+
+}

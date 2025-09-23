@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+    font-family: "Inter", sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*CSS Header*/
+
+.headerCont {
+    /*Estilização da section do header*/
+    background: linear-gradient(180deg, rgba(255, 223, 12, 0.916), rgba(255, 140, 0, 0.674), black);
+    height: 12vh;
+    width: 100%;
+}
+
+.header {
+    /*Menu*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 7%;
+}
+
+.lista {
+    /*Lista do menu*/
+    display: flex;
+    gap: 60px;
+    transition: 0.3s;
+}
+
+.itemLink {
+    /*Itens do menu*/
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    transition: 0.3s;
+}
+
+.itemLink:hover,
+.lista:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+/*Sec Livre (CSS base para as outras secs)*/
+
+.livre {
+    /*Sec sobre software livre*/
+    display: flex;
+    padding: 5% 0%;
+    padding-bottom: 0%;
+}
+
+.textLivre {
+    /*Caixa geral do texto software livre*/
+    padding: 0% 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.textContLivre {
+    /*Texto software livre*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    background: linear-gradient(180deg, darkorange, rgb(255, 179, 0));
+    border-radius: 25px;
+    padding: 5%;
+}
+
+.textContLivre h1 {
+    /*Titulo do texto software livre*/
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.textContLivre p {
+    /* Paragrafo do texto software livre*/
+    font-size: 12px;
+}
+
+.subTit {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.pr {
+    /*Paragrafos da section Fatores*/
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+/*Css Sec source*/
+
+.source {
+    /*Sec sobre open soucre*/
+    display: flex;
+    padding: 5% 0%;
+}
+
+.textContSource {
+    background: linear-gradient(180deg, rgb(255, 179, 0), darkorange);
+}
+
+
+/*diferenças section*/
+
+.diferencas {
+    /*Sec sobre software livre*/
+    display: flex;
+    padding: 5% 0%;
+    background: linear-gradient(180deg, black, rgba(255, 140, 0, 0.674), rgba(255, 223, 12, 0.916));
+}
+
+.textContDiferencas {
+    background: none;
+}
+
+@media screen and (max-width:300px) {
+    .headerCont {
+        height: 10vh;
+    }
+
+    .itemLink {
+        font-size: 13px;
+    }
+
+    .textContLivre h1 {
+        /*Est. do titulo*/
+        font-size: 13px;
+    }
+
+    .textContLivre p {
+        /*Est. do paragrafo*/
+        font-size: 10px;
+    }
+
+    .subTit {
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .itemLink {
+        font-size: 20px;
+    }
+
+    .textContLivre h1 {
+        /*Est. do titulo*/
+        font-size: 20px;
+    }
+
+    .textContLivre p {
+        /*Est. do paragrafo*/
+        font-size: 15px;
+    }
+
+    .subTit {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .headerCont {
+        height: 17vh;
+    }
+
+    .itemLink {
+        font-size: 25px;
+    }
+
+    .textContLivre {
+        gap: 30px;
+    }
+
+    .textContLivre h1 {
+        /*Est. do titulo*/
+        font-size: 25px;
+    }
+
+    .textContLivre p {
+        /*Est. do paragrafo*/
+        font-size: 18px;
+    }
+
+    .subTit {
+        font-size: 19px;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+
+    .headerCont {
+        height: 20vh;
+    }
+
+    .itemLink {
+        font-size: 35px;
+    }
+
+    .textContLivre {
+        gap: 40px;
+    }
+
+    .textContLivre h1 {
+        /*Est. do titulo*/
+        font-size: 35px;
+    }
+
+    .textContLivre p {
+        /*Est. do paragrafo*/
+        font-size: 22px;
+    }
+
+}

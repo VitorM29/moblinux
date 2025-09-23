@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+    font-family: "Inter", sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*CSS Header*/
+
+.headerCont {
+    /*Estilização da section do header*/
+    background: linear-gradient(180deg, rgba(255, 223, 12, 0.916), rgba(255, 140, 0, 0.674), black);
+    height: 12vh;
+    width: 100%;
+}
+
+.header {
+    /*Menu*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 7%;
+}
+
+.lista {
+    /*Lista do menu*/
+    display: flex;
+    gap: 60px;
+    transition: 0.3s;
+}
+
+.itemLink {
+    /*Itens do menu*/
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    transition: 0.3s;
+}
+
+.itemLink:hover,
+.lista:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+/*CSS Section Relevancia*/
+
+.relevancia {
+    /*Estilização da section principal*/
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.textRelevancia {
+    /*div que comanda a "Caixa geral"*/
+    color: rgb(255, 255, 255);
+}
+
+.textContRelevancia {
+    /*div que controla o texto*/
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.textContRelevancia h1 {
+    /*Est. do titulo*/
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.textContRelevancia p {
+    /*Est. do paragrafo*/
+    font-size: 12px;
+}
+
+.imgContLinux {
+    /*Caixa da imagem */
+    width: 100%;
+    height: 100px;
+}
+
+.imgLinux {
+    height: 100%;
+    width: 100%;
+    background-image: url("./img/relevancialinux.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*CSS Section server*/
+
+.server {
+    /*Estilização da section principal*/
+    padding: 5%;
+    display: flex;
+}
+
+.textserver {
+    /*div que comanda a "Caixa geral"*/
+    color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, darkorange, yellow);
+    padding: 5%;
+    border-radius: 30px;
+}
+
+/*CSS dos topicos*/
+
+.topicos {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0%;
+    gap: 10px;
+}
+
+.topicos h2 {
+    font-weight: 800;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 300px) {
+    .imgContLinux {
+        height: 100px;
+    }
+
+     .textContRelevancia h1 {
+        /*Est. do titulo*/
+        font-size: 13px;
+    }
+
+}
+
+
+@media screen and (min-width: 650px) {
+
+    .itemLink {
+        font-size: 20px;
+    }
+
+    .textContRelevancia h1 {
+        /*Est. do titulo*/
+        font-size: 20px;
+    }
+
+    .textContRelevancia p {
+        /*Est. do paragrafo*/
+        font-size: 15px;
+    }
+
+    .topicos h2 {
+        font-size: 16px;
+    }
+
+    .imgContLinux {
+        height: 200px;
+    }
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .headerCont {
+        height: 17vh;
+    }
+
+    .itemLink {
+        font-size: 25px;
+    }
+
+    /*Section Relevancia*/
+
+    .relevancia {
+        gap: 35px;
+    }
+
+    .textContRelevancia {
+        gap: 30px;
+    }
+
+    .textContRelevancia h1 {
+        /*Est. do titulo*/
+        font-size: 25px;
+    }
+
+    .textContRelevancia p {
+        /*Est. do paragrafo*/
+        font-size: 18px;
+    }
+
+    .topicos h2 {
+        font-size: 19px;
+    }
+
+    .imgContLinux{
+        /*Caixa da imagem do texto fundador - aumentando altura p/ 700px*/
+        height: 300px;
+    }
+
+}
+
+
+@media screen and (min-width: 1300px) {
+
+    .headerCont {
+        height: 20vh;
+    }
+
+    .itemLink {
+        font-size: 30px;
+    }
+
+    /*Section Relevancia*/
+
+    .relevancia{
+        gap: 50px;
+    }
+
+    .textContRelevancia {
+        gap: 40px;
+    }
+
+    .textContRelevancia h1 {
+        /*Est. do titulo*/
+        font-size: 30px;
+    }
+
+    .textContRelevancia p {
+        /*Est. do paragrafo*/
+        font-size: 20px;
+    }
+
+    .imgContLinux {
+        height: 400px;
+    }
+
+    .topicos h2 {
+        font-size: 21px;
+    }
+
+}

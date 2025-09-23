@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+    font-family: "Inter", sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*CSS Header*/
+
+.headerCont {
+    /*Estilização da section do header*/
+    background: linear-gradient(180deg, rgba(255, 223, 12, 0.916), rgba(255, 140, 0, 0.674), black);
+    height: 12vh;
+    width: 100%;
+}
+
+.header {
+    /*Menu*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 7%;
+}
+
+.lista {
+    /*Lista do menu*/
+    display: flex;
+    gap: 60px;
+    transition: 0.3s;
+}
+
+.itemLink {
+    /*Itens do menu*/
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    transition: 0.3s;
+}
+
+.itemLink:hover,
+.lista:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+/*CSS sobre a section Fundador (CSS base para as outras secs)*/
+
+.fundador {
+    /*Section sobre o FUndador*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 5% 0%;
+    padding-bottom: 10%;
+}
+
+.textFunda {
+    /*Caixa geral do texto fundador*/
+    padding: 0% 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.textContFunda {
+    /*Texto fundador*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    color: white;
+}
+
+.textContFunda h1 {
+    /*Titulo do texto fundador*/
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.textContFunda p {
+    /* Paragrafo do texto fundador*/
+    font-size: 12px;
+}
+
+span {
+    /*Frases importantes do texto fundador*/
+    color: rgb(229, 154, 63);
+    font-weight: 700;
+}
+
+.imgFunda {
+    /*Imagem do texto fundador*/
+    background-image: url("./img/linus.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.imgFundaCont {
+    /*Caixa da imagem do texto fundador*/
+    width: 100%;
+    height: 400px;
+    padding: 0% 10%;
+}
+
+
+/*Sec criação*/
+
+.criacao {
+    /*Section criação*/
+    display: flex;
+    padding: 5% 0%;
+    height: 100%;
+    background: linear-gradient(135deg, darkorange, yellow);
+}
+
+
+/*Sec fatores*/
+
+.fatores {
+    /*Section fatores importantes*/
+    display: flex;
+    padding: 5% 0%;
+}
+
+.p {
+    /*Paragrafos da section Fatores*/
+    width: 100%;
+    padding: 2%;
+    background: linear-gradient(135deg, darkorange, yellow);
+    border-radius: 10px;
+    color: black;
+    font-size: 12px;
+}
+
+.titulo {
+    /*Titulo da sec fatores*/
+    font-weight: 700;
+    color: black;
+}
+
+@media screen and (max-width: 300px) {
+    .imgFundaCont {
+        /*Caixa da imagem do texto fundador - aumentando altura p/ 700px*/
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+
+    .itemLink {
+        font-size: 20px;
+    }
+
+    .textContFunda h1 {
+        /*Est. do titulo*/
+        font-size: 20px;
+    }
+
+    .textContFunda p {
+        /*Est. do paragrafo*/
+        font-size: 15px;
+    }
+
+    .imgFundaCont {
+        /*Caixa da imagem do texto fundador - aumentando altura p/ 600px*/
+        height: 600px;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+
+    .headerCont {
+        height: 17vh;
+    }
+
+    .itemLink {
+        font-size: 25px;
+    }
+
+    .fundador {
+        gap: 35px;
+    }
+
+    .textContFunda {
+        gap: 30px;
+    }
+
+    .textContFunda h1 {
+        /*Est. do titulo*/
+        font-size: 25px;
+    }
+
+    .textContFunda p {
+        /*Est. do paragrafo*/
+        font-size: 18px;
+    }
+
+    .imgFundaCont {
+        /*Caixa da imagem do texto fundador - aumentando altura p/ 700px*/
+        width: 70%;
+        height: 700px;
+        padding: 0% 0%;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+
+    .headerCont {
+        height: 20vh;
+    }
+
+    .itemLink {
+        font-size: 30px;
+    }
+
+    .fundador{
+        gap: 50px;
+    }
+
+    .textContFunda {
+        gap: 40px;
+    }
+
+    .textContFunda h1 {
+        /*Est. do titulo*/
+        font-size: 30px;
+    }
+
+    .textContFunda p {
+        /*Est. do paragrafo*/
+        font-size: 20px;
+    }
+
+    .imgFundaCont {
+        /*Caixa da imagem do texto fundador - aumentando altura p/ 700px*/
+        width: 60%;
+        height: 900px;
+        padding: 0% 0%;
+    }
+
+}

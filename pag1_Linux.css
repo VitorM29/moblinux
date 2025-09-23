@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+    font-family: "Inter", sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*CSS Header*/
+
+.headerCont {
+    /*Estilização da section do header*/
+    background: linear-gradient(180deg, rgba(255, 223, 12, 0.916), rgba(255, 140, 0, 0.674), black);
+    height: 12vh;
+    width: 100%;
+}
+
+.header {
+    /*Menu*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 7%;
+}
+
+.lista {
+    /*Lista do menu*/
+    display: flex;
+    gap: 60px;
+    transition: 0.3s;
+}
+
+.itemLink {
+    /*Itens do menu*/
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    transition: 0.3s;
+}
+
+.itemLink:hover,
+.lista:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+/*CSS Section Linux (CSS base para as outras secs)*/
+
+.linux {
+    /*section*/
+    padding: 5% 0%;
+    padding-bottom: 10%;
+    display: flex;
+}
+
+.textLinux {
+    /*div que comanda a "Caixa geral"*/
+    color: white;
+    padding: 0% 10%;
+}
+
+.textContLinux {
+    /*div que controla o texto*/
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.textContLinux h1 {
+    /*Est. do titulo*/
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.textContLinux p {
+    /*Est. do paragrafo*/
+    font-size: 12px;
+}
+
+/*CSS Section kernel*/
+
+.kernel {
+    /*section*/
+    padding: 5% 0%;
+    border-radius: 50px;
+    background: linear-gradient(135deg, darkorange, yellow);
+    display: flex;
+}
+
+.textkernel {
+    /*div que comanda a "Caixa geral"*/
+    color: rgb(255, 255, 255);
+    padding: 0% 10%;
+}
+
+.textContKernel {
+    /*controla o texto*/
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textContKernel h2 {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.topicos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*CSS da Section Função*/
+
+.funcao {
+    /*Estilização da section principal*/
+    padding: 5% 0%;
+    padding-top: 10%;
+    display: flex;
+}
+
+.textFuncao {
+    /*div que comanda a "Caixa geral"*/
+    color: rgb(255, 255, 255);
+    padding: 0% 10%;
+}
+
+.textContFuncao {
+    /*div que controla o texto*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+span {
+    font-size: 12px;
+    font-weight: 800;
+    color: darkorange
+}
+
+@media screen and (max-width: 300px) {
+    .headerCont {
+        height: 10vh;
+    }
+
+    .itemLink {
+        font-size: 13px;
+    }
+
+    .textContLinux h1 {
+        /*Est. do titulo*/
+        font-size: 12px;
+        font-weight: 900;
+    }
+
+    .textContLinux p {
+        /*Est. do paragrafo*/
+        font-size: 10px;
+    }
+
+    .textContKernel h2 {
+        font-size: 11px;
+        font-weight: 800;
+    }
+
+    span {
+        font-size: 10px;
+        font-weight: 800;
+        color: darkorange
+    }
+
+}
+
+@media screen and (min-width: 650px) {
+    .itemLink {
+        font-size: 20px;
+    }
+
+    .textContLinux h1 {
+        /*Est. do titulo*/
+        font-size: 20px;
+    }
+
+    .textContLinux p {
+        /*Est. do paragrafo*/
+        font-size: 15px;
+    }
+
+    .textContKernel h2 {
+        font-size: 16px;
+    }
+
+    span {
+        font-size: 15px;
+        color: darkorange
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .headerCont {
+        height: 17vh;
+    }
+
+    .itemLink {
+        font-size: 25px;
+    }
+
+    .textContLinux {
+        gap: 30px;
+    }
+
+    .textContLinux h1 {
+        /*Est. do titulo*/
+        font-size: 25px;
+    }
+
+    .textContLinux p {
+        /*Est. do paragrafo*/
+        font-size: 18px;
+    }
+
+    .textContKernel {
+        gap: 25px;
+    }
+
+    .textContKernel h2 {
+        font-size: 19px;
+    }
+
+    .textContFuncao {
+        gap: 30px;
+    }
+
+    span {
+        font-size: 18px;
+    }
+
+}
+
+
+@media screen and (min-width: 1300px) {
+
+    .headerCont {
+        height: 20vh;
+    }
+
+    .itemLink {
+        font-size: 30px;
+    }
+
+    .textContLinux {
+        gap: 30px;
+    }
+
+    .textContLinux h1 {
+        /*Est. do titulo*/
+        font-size: 30px;
+    }
+
+    .textContLinux p {
+        /*Est. do paragrafo*/
+        font-size: 20px;
+    }
+
+    .textContKernel {
+        gap: 25px;
+    }
+
+    .textContKernel h2 {
+        font-size: 21px;
+    }
+
+    .textContFuncao {
+        gap: 30px;
+    }
+
+    span {
+        font-size: 20px;
+    }
+
+}

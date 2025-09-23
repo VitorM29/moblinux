@@ -1,0 +1,490 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #000000;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*CSS Header*/
+
+.headerCont {
+  /*Estilização da section do header*/
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, darkorange, rgb(252, 216, 55), black);
+}
+
+.header {
+  /*Menu*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 7%;
+}
+
+.lista {
+  /*Lista do menu*/
+  display: flex;
+  gap: 60px;
+  transition: 0.3s;
+}
+
+.itemLink {
+  /*Itens do menu*/
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  transition: 0.3s;
+}
+
+.sloganCont {
+  /*Container da frase principal(Slogan)*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+}
+
+.slogan {
+  /*Estilização do slogan*/
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.principal {
+  /*Estilização da frase principal*/
+  font-size: 120px;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+/*Cards Container*/
+
+
+.cardsCont {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  justify-content: center;
+  gap: 150px;
+  padding: 50px;
+}
+
+.textCards {
+  /*Div que controla o texto e o titulo dos cards*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 40px;
+}
+
+.textCards h1 {
+  /*Estilização dos Titulos dos cards*/
+  font-size: 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+.cr3 h1 { /*Titulo do card 3*/
+  font-size: 35px;
+}
+
+.cr4 {
+  gap: 20%;
+}
+
+.cr4 h1 {
+  font-size: 40px;
+}
+
+.textCards p {
+  /*Estilização dos paragrafos dos cards*/
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.textCards button:hover{
+  box-shadow: 0 0 0 3px #ebebeb;
+}
+
+button {
+  /*botões dos cards*/
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  background: #000000;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: .1s;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+/*Botoes especificos e seus ajustes*/
+.card2 button {
+  margin-top: 35px;
+}
+
+.card3 button {
+  margin-top: 20px;
+}
+
+.card4 button {
+  margin-top: -10px;
+}
+
+.card5 button {
+  margin-top: 25px;
+}
+
+.card6 button {
+  margin-top: 25px;
+}
+
+/*Cards*/
+
+.cardsTam{ /*Classe unica para estilização dos cards*/
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, darkorange, yellow);
+  border-radius: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cardsTam:hover, .itemLink:hover,
+.lista:hover {
+    transform: translateY(-10px) scale(1.03);
+} 
+
+
+@media screen and (max-width: 1100px) {
+
+  .textCards {
+    /*Div que controla o texto e o titulo dos cards*/
+    gap: 25px;
+    padding: 30px;
+  }
+
+  .textCards h1 {
+    /*Estilização dos Titulos dos cards*/
+    font-size: 30px;
+  }
+
+  .textCards p {
+    /*Estilização dos paragrafos dos cards*/
+    font-size: 12px;
+  }
+
+  button {
+    /*botôes dos cards*/
+    width: 100%;
+  }
+
+  .cr3 h1 {
+    /*Titulo do card3*/
+    font-size: 25px;
+  }
+
+  .cr4 {
+    gap: 40px;
+  }
+
+  .card3 button {
+    /*btn do card3*/
+    margin-top: 10px;
+  }
+
+  .card4 button {
+    /*btn do card4*/
+    margin-top: -10px;
+  }
+
+  .cardsCont { /*grid dos cards*/
+    grid-template-columns: repeat(2, 250px);
+  }
+
+  .cardsTam {
+    /*Tamanho dos cards*/
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .sloganCont {
+    /*Container da frase principal(Slogan)*/
+    padding: 15%;
+  }
+
+  .slogan {
+    /*Estilização do slogan*/
+    font-size: 20px;
+  }
+
+  .principal {
+    /*Estilização da frase principal*/
+    font-size: 80px;
+  }
+
+  .cardsCont {
+    grid-template-columns: repeat(2, 200px);
+    gap: 150px;
+    padding: 100px;
+  }
+
+  .textCards {
+    /*Div que controla o texto e o titulo dos cards*/
+    gap: 15px;
+    padding: 30px;
+  }
+
+  .textCards h1 {
+    /*Estilização dos Titulos dos cards*/
+    font-size: 25px;
+  }
+
+  .textCards p {
+    /*Estilização dos paragrafos dos cards*/
+    font-size: 10px;
+  }
+
+  button {
+    /*botôes dos cards*/
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .cr3 h1 {
+    /*Titulo do card3*/
+    font-size: 20px;
+  }
+
+  .cr4 {
+    gap: 30px;
+  }
+
+  .card1 button {
+    /*btn do card1*/
+    margin-top: 25px;
+  }
+
+  .card3 button {
+    /*btn do card3*/
+    margin-top: 15px;
+  }
+
+  .card4 button {
+    /*btn do card4*/
+    margin-top: 0px;
+  }
+
+
+  .cardsTam {
+    /*Tamanho dos cards*/
+    width: 250px;
+    height: 250px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .headerCont{
+    height: 80vh;
+  }
+
+  .itemLink {
+    /*Itens do menu*/
+    font-size: 25px;
+  }
+
+  .sloganCont {
+    /*Container da frase principal(Slogan)*/
+    padding-top: 20%;
+  }
+
+  .slogan {
+    /*Estilização do slogan*/
+    font-size: 12px;
+  }
+
+  .principal {
+    /*Estilização da frase principal*/
+    font-size: 65px;
+  }
+  
+  .cardsCont {
+    grid-template-columns: repeat(1, 300px);
+  }
+
+  .textCards {
+    /*Div que controla o texto e o titulo dos cards*/
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .textCards h1 {
+    /*Estilização dos Titulos dos cards*/
+    font-size: 35px;
+  }
+
+  .textCards p {
+    /*Estilização dos paragrafos dos cards*/
+    font-size: 12px;
+  }
+
+  button {
+    /*botôes dos cards*/
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .cr3 h1 {
+    /*Titulo do card3*/
+    font-size: 25px;
+  }
+
+  .cr4 {
+    gap: 30px;
+  }
+
+  .card1 button {
+    /*btn do card1*/
+    margin-top: 10apx;
+  }
+
+  .card3 button {
+    /*btn do card3*/
+    margin-top: 15px;
+  }
+
+  .card4 button {
+    /*btn do card4*/
+    margin-top: 5px;
+  }
+
+  .cardsTam {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+
+  .headerCont{
+    height: 60vh;
+  }
+  .itemLink {
+    /*Itens do menu*/
+    font-size: 15px;
+  }
+
+  .sloganCont {
+    /*Container da frase principal(Slogan)*/
+    padding-top: 30%;
+  }
+
+  .slogan {
+    /*Estilização do slogan*/
+    font-size: 10px;
+  }
+
+  .principal {
+    /*Estilização da frase principal*/
+    font-size: 50px;
+  }
+  
+  .cardsCont {
+    grid-template-columns: repeat(1, 200px);
+    gap: 80px;
+  }
+
+  .textCards {
+    /*Div que controla o texto e o titulo dos cards*/
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .textCards h1 {
+    /*Estilização dos Titulos dos cards*/
+    font-size: 20px;
+  }
+
+  .textCards p {
+    /*Estilização dos paragrafos dos cards*/
+    font-size: 8px;
+  }
+
+  button {
+    /*botôes dos cards*/
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .cr3 h1 {
+    /*Titulo do card3*/
+    font-size: 20px;
+  }
+
+  .card1 button {
+    /*btn do card1*/
+    margin-top: 15px;
+  }
+
+  .card3 button {
+    /*btn do card3*/
+    margin-top: 15px;
+  }
+
+  .card4 button {
+    /*btn do card4*/
+    margin-top: 20px;
+  }
+
+  .cardsTam {
+    width: 200px;
+    height: 200px;
+  }
+}
